@@ -1,28 +1,55 @@
-.App {
+.todo-items {
+  margin: 5em auto;
+  width: 80%;
+}
+
+.todo-items .todo-item {
+  align-items: center;
+  display: flex;
+  padding: 1em;
+}
+
+.todo-items .todo-item .text {
+  flex: 10;
+}
+
+.todo-items .todo-item .date {
+  flex: 1;
+}
+
+.todo-items .todo-item .status {
+  flex: 2;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.todo-items .todo-item .status span {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.5em 0;
+  text-align: center;
+  width: 90%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.todo-items .todo-item .status.not-started span {
+  background-color: red;
 }
 
-.App-title {
-  font-size: 1.5em;
+.todo-items .todo-item .status.started span {
+  background-color: yellow;
 }
 
-.App-intro {
-  font-size: large;
+.todo-items .todo-item .status.complete span {
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.todo-items .title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.todo-items .description {
+  color: darkgray;
+  font-style: italic;
+  margin-top: 0.5em;
 }
